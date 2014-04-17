@@ -1,4 +1,4 @@
-var jsonFlatter = require('../jsonFlatter.js'),
+var jsonFlatter = require('../jsonflatter.js'),
     assert = require('assert');
 
 describe('Json Flatter test', function () {
