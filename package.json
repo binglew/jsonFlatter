@@ -22,5 +22,13 @@
     "flatten"
   ],
   "author": "Bingle <binarybb@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/binglew/jsonFlatter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/binglew/jsonFlatter/issues"
+  },
+  "homepage": "https://github.com/binglew/jsonFlatter"
 }
