@@ -1,5 +1,5 @@
 {
-  "name": "jsonFlatter",
+  "name": "jsonflatter",
   "version": "0.0.1",
   "dependencies": {
     "underscore": "1.6.0"
@@ -8,8 +8,8 @@
     "mocha": "1.6.0",
     "should": "1.2.0"
   },
-  "description": "flattern a json object",
-  "main": "jsonFlatter.js",
+  "description": "flatten a json object",
+  "main": "jsonflatter.js",
   "directories": {
     "test": "test"
   },
