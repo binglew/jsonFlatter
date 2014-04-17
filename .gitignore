@@ -1,0 +1,18 @@
+# ignore files everywhere
+*.swp
+*~
+*.pyc
+*.css
+*.iml
+*.pid
+.stats
+
+#ignore folders everywhere
+node_modules
+.idea
+vendor
+coverage
+
+target
+
+
