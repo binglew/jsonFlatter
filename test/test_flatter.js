@@ -3,6 +3,7 @@ var jsonFlatter = require('../jsonflatter.js'),
 
 describe('Json Flatter test', function () {
    it('should flatten given json', function (done) {
+      var now = new Date();
       var json = {
          a:1,
          b:{
@@ -13,7 +14,8 @@ describe('Json Flatter test', function () {
             a:[1,2,3],
             b:{},
             c:['',null, undefined, true]
-         }
+         },
+         d: now
       };
       var expected = {
          'a': 1,
@@ -25,7 +27,8 @@ describe('Json Flatter test', function () {
          'c#c#0': '',
          'c#c#1': null,
          'c#c#2': undefined,
-         'c#c#3': true
+         'c#c#3': true,
+         'd': now
       };
       var rst1, rst2={};
       rst1 = jsonFlatter.flatJson(json, {

@@ -10,12 +10,12 @@ function flatJson_internal(prefix, json){
       prefix += internal_options.separator;
    }
    underscore.each( Object.keys(json), function(elem){
-      if( typeof json[elem] === 'object' && json[elem]!==null ) {
+      if( typeof json[elem] === 'object' && json[elem]!==null && !underscore.isDate(json[elem]) ) {
          underscore.extend(rst, flatJson_internal(prefix+elem, json[elem]));
       }
       else {
          if(internal_options.callback) {
-            internal_options.callback(prefix+elem, json[elem])
+            internal_options.callback(prefix+elem, json[elem]);
          }
          rst[prefix+elem] = json[elem];
       }
@@ -28,5 +28,5 @@ exports = module.exports = {
       underscore.extend(internal_options, options);
       return flatJson_internal(internal_options.prefix, json);
    }
-}
+};
 
