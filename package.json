@@ -1,6 +1,6 @@
 {
-  "name": "jsonflatter",
-  "version": "0.0.1",
+  "name": "@lanetix/jsonflatter",
+  "version": "0.0.2",
   "dependencies": {
     "underscore": "1.6.0"
   },
